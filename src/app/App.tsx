@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
-import './App.css'
+import './App.scss'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,7 +23,7 @@ function App() {
       </div>
     </header>
     {/* <!-- HEADER SECTION END-->
-  
+
         <!-- MENU SECTION --> */}
           {/* <ul className="menu-container">
               <li className="menu" (mouseover)="selectedMenu='Новинки'" (mouseleave)="selectedMenu=''">Новинки<app-submenu className="sub-menu" [selectedMenu]="selectedMenu"></app-submenu></li>
