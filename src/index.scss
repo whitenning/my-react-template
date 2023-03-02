@@ -1,69 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+    font-family: "Avenir";
+    src: url("assets/fonts/avenirnextcyr-regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: var(--color-white);
+}
+
+  /* color of scrollbar thumb on hover */
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* color of scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-white);
+  }
+  
+  /* color of scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+
+    background-color: var(--color-primary);
+    border-radius: 2px;
+    width: 3px;
+    height: 1rem;
+  }
+html {
+  width: 100vw;
+  height: 100vh;
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    --color-bg: #171719;
+    --color-primary: #E75626;
+    --color-white: white
+}
+.btn-primary {
+  
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    padding: 10px 24px;
+    background-color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 700;
+  
+    border-radius: 30px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.btn-primary:hover {
+  background: rgb(231, 86, 38, 0.8);
 }
 
+.container {
+    width: 1440px;
+    margin: 0 auto;
+   
+}
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    
+    background: var(--color-bg);
+    font-family: 'Bebas Neue', cursive;
+    overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}

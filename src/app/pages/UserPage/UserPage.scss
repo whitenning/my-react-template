@@ -1,0 +1,37 @@
+main.user-page {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+section.user {
+margin-top: 110px;
+
+     display: flex;
+     flex-direction: column;
+     gap: 22px;
+
+        h2 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        h4 {
+            font-size: 32px;
+            color: var(--color-primary)
+        }
+       
+    
+
+}
+    .planet {
+      
+        right: -95px;
+        top: 167px;
+     
+       
+           
+       
+        }
+}

@@ -1,0 +1,129 @@
+// PLANET START //
+.planet {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    right: 150px;
+    top: 2px;
+    border-radius: 50%;
+    position: relative;
+    .animation-entry {
+      position: absolute;
+      width: 566px;
+      height: 566px;
+      border-radius: 50%;
+      z-index: 100;
+    }
+    span {
+      z-index: -1;
+      position: absolute;
+      width: 370px;
+      height: 370px;
+      background-color: rgba(30, 30, 32, 0.5);
+      border: 1px solid #323232;
+      border-radius: 50%;
+    }
+  
+    span.nd {
+      width: 384px;
+      height: 384px;
+      z-index: -2;
+    }
+    span.rd {
+      width: 446px;
+      height: 446px;
+      z-index: -3;
+      border: none;
+    }
+    span.th {
+      width: 526px;
+      z-index: -4;
+      height: 526px;
+      background: #171719;
+      filter: blur(8px);
+    }
+  
+    @keyframes rotate {
+      0% {
+        border-width: 0px;
+        border-color: var(--color-primary);
+      }
+      100% {
+        border-width: 1px;
+        border-color: var(--color-primary);
+      }
+    }
+  
+    span.fifth {
+      border-top-left-radius: 0;
+      border-top-right-radius: 253px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 253px;
+  
+      border-style: solid;
+      border-width: 0;
+      border-color: none;
+      border-left: none;
+      width: 253px;
+      height: 506px;
+      right: -96px;
+      background: none;
+      animation: rotate 5s infinite;
+      div {
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: -3px;
+        border-radius: 50%;
+        left: -3px;
+        background: var(--color-primary);
+      }
+      div.st {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: auto;
+        height: auto;
+        border-radius: 15px;
+        background-color: var(--color-white);
+        font-size: 14px;
+        color: black;
+        padding: 8px 12px;
+        top: -16px;
+        left: -61px;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+  
+          width: 12px;
+          height: 12px;
+          box-shadow: -2px -2px 6px rgba(50, 50, 50, 0.25),
+            2px 2px 6px rgba(50, 50, 50, 0.25);
+          p {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--color-primary);
+          }
+        }
+      }
+      div.nd {
+        top: 250px;
+        right: 0;
+        left: calc(100% - 2.4px);
+      }
+      div.rd {
+        top: calc(100% - 2px);
+        left: 0;
+      }
+    }
+  
+    img {
+      z-index: 1;
+    }
+  }
+  // PLANET END //
+  

@@ -1,22 +1,34 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './app/App'
 import './index.scss'
+
+// Import modules here
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux'
 import store from './app/redux/global'
+import { DAppProvider, Config } from '@usedapp/core'
+
+// Import components here
+import App from './app/App'
+
+
+
+
+// Dapp confing
+const config: Config = {
+  
+}
 
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-     <BrowserRouter>
+    <BrowserRouter>
         <Provider store={store}>
-
-      <App />
-     
-      </Provider>
-      </BrowserRouter>
- 
+        <DAppProvider config={config}>
+           <App />
+           </DAppProvider>
+        </Provider>
+    </BrowserRouter>
   </React.StrictMode>,
 )
